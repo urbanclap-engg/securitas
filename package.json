@@ -1,0 +1,37 @@
+{
+  "name": "@uc-engg/securitas",
+  "version": "1.0.0",
+  "description": "Security Library",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:urbanclap-engg/securitas.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier:check": "npm run prettier:base -- --list-different \"./src/**/*.{ts,tsx}\"",
+    "prettier:write": "npm run prettier:base -- --write \"./src/**/*.{ts,tsx}\""
+  },
+  "keywords": [
+    "security",
+    "privacy"
+  ],
+  "author": "UrbanClap Technologies India Pvt. Ltd.",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "4.3.8",
+    "tslint": "5.20.1",
+    "typescript": "3.9.7"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "12.11.7",
+    "lodash": "^4.17.4"
+  }
+}

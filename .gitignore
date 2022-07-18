@@ -1,0 +1,9 @@
+node_modules
+dist
+.vscode
+*.log
+event_logs
+*.DS_Store
+test_reports
+junit.xml
+.idea
